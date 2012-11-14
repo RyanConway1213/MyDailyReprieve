@@ -26,15 +26,15 @@
 		DE462D3616534A46006711A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE462D3816534A46006711A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DE462D3A16534A46006711A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DE462D3E16534A46006711A8 /* MyDailyReprieve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDailyReprieve-Info.plist"; sourceTree = "<group>"; };
+		DE462D3E16534A46006711A8 /* MyDailyReprieve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MyDailyReprieve-Info.plist"; path = "MyDailyReprieve/MyDailyReprieve-Info.plist"; sourceTree = "<group>"; };
 		DE462D4016534A46006711A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DE462D4216534A46006711A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDailyReprieve-Prefix.pch"; sourceTree = "<group>"; };
-		DE462D4516534A46006711A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DE462D4616534A46006711A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE462D4816534A46006711A8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DE462D4A16534A46006711A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DE462D4C16534A46006711A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DE462D4216534A46006711A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MyDailyReprieve/main.m; sourceTree = "<group>"; };
+		DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyDailyReprieve-Prefix.pch"; path = "MyDailyReprieve/MyDailyReprieve-Prefix.pch"; sourceTree = "<group>"; };
+		DE462D4516534A46006711A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MyDailyReprieve/AppDelegate.h; sourceTree = "<group>"; };
+		DE462D4616534A46006711A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MyDailyReprieve/AppDelegate.m; sourceTree = "<group>"; };
+		DE462D4816534A46006711A8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = MyDailyReprieve/Default.png; sourceTree = "<group>"; };
+		DE462D4A16534A46006711A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "MyDailyReprieve/Default@2x.png"; sourceTree = "<group>"; };
+		DE462D4C16534A46006711A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "MyDailyReprieve/Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE462D4F16534A46006711A8 /* MyDailyReprieve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDailyReprieve.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,9 @@
 		DE462D2516534A46006711A8 = {
 			isa = PBXGroup;
 			children = (
-				DE462D3C16534A46006711A8 /* MyDailyReprieve */,
+				DE462D3E16534A46006711A8 /* MyDailyReprieve-Info.plist */,
+				DE462D5716534E28006711A8 /* Source */,
+				DE462D5616534E02006711A8 /* Resources */,
 				DE462D3316534A46006711A8 /* Frameworks */,
 				DE462D3116534A46006711A8 /* Products */,
 			);
@@ -81,29 +83,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE462D3C16534A46006711A8 /* MyDailyReprieve */ = {
+		DE462D5616534E02006711A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE462D3F16534A46006711A8 /* InfoPlist.strings */,
+				DE462D5A16534ED9006711A8 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE462D5716534E28006711A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DE462D4216534A46006711A8 /* main.m */,
+				DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */,
+				DE462D5916534E67006711A8 /* App */,
+				DE462D5816534E50006711A8 /* Models */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		DE462D5816534E50006711A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE462D4E16534A46006711A8 /* MyDailyReprieve.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DE462D5916534E67006711A8 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				DE462D4516534A46006711A8 /* AppDelegate.h */,
 				DE462D4616534A46006711A8 /* AppDelegate.m */,
-				DE462D4E16534A46006711A8 /* MyDailyReprieve.xcdatamodeld */,
-				DE462D3D16534A46006711A8 /* Supporting Files */,
 			);
-			path = MyDailyReprieve;
+			name = App;
 			sourceTree = "<group>";
 		};
-		DE462D3D16534A46006711A8 /* Supporting Files */ = {
+		DE462D5A16534ED9006711A8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				DE462D3E16534A46006711A8 /* MyDailyReprieve-Info.plist */,
-				DE462D3F16534A46006711A8 /* InfoPlist.strings */,
-				DE462D4216534A46006711A8 /* main.m */,
-				DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */,
 				DE462D4816534A46006711A8 /* Default.png */,
 				DE462D4A16534A46006711A8 /* Default@2x.png */,
 				DE462D4C16534A46006711A8 /* Default-568h@2x.png */,
 			);
-			name = "Supporting Files";
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +210,7 @@
 				DE462D4016534A46006711A8 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = MyDailyReprieve;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +319,8 @@
 				DE462D4F16534A46006711A8 /* MyDailyReprieve.xcdatamodel */,
 			);
 			currentVersion = DE462D4F16534A46006711A8 /* MyDailyReprieve.xcdatamodel */;
-			path = MyDailyReprieve.xcdatamodeld;
+			name = MyDailyReprieve.xcdatamodeld;
+			path = MyDailyReprieve/MyDailyReprieve.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
