@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE26D6571678299000107D13 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26D6551678299000107D13 /* MapViewController.m */; };
+		DE26D6581678299000107D13 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE26D6561678299000107D13 /* MapViewController.xib */; };
 		DE462D3516534A46006711A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3416534A46006711A8 /* UIKit.framework */; };
 		DE462D3716534A46006711A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3616534A46006711A8 /* Foundation.framework */; };
 		DE462D3916534A46006711A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3816534A46006711A8 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE26D6541678299000107D13 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MyDailyReprieve/MapViewController.h; sourceTree = "<group>"; };
+		DE26D6551678299000107D13 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MyDailyReprieve/MapViewController.m; sourceTree = "<group>"; };
+		DE26D6561678299000107D13 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = MyDailyReprieve/MapViewController.xib; sourceTree = "<group>"; };
 		DE462D3016534A46006711A8 /* MyDailyReprieve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyReprieve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE462D3416534A46006711A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE462D3616534A46006711A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +121,9 @@
 			children = (
 				DE462D4516534A46006711A8 /* AppDelegate.h */,
 				DE462D4616534A46006711A8 /* AppDelegate.m */,
+				DE26D6541678299000107D13 /* MapViewController.h */,
+				DE26D6551678299000107D13 /* MapViewController.m */,
+				DE26D6561678299000107D13 /* MapViewController.xib */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 				DE462D4916534A46006711A8 /* Default.png in Resources */,
 				DE462D4B16534A46006711A8 /* Default@2x.png in Resources */,
 				DE462D4D16534A46006711A8 /* Default-568h@2x.png in Resources */,
+				DE26D6581678299000107D13 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +207,7 @@
 				DE462D4316534A46006711A8 /* main.m in Sources */,
 				DE462D4716534A46006711A8 /* AppDelegate.m in Sources */,
 				DE462D5016534A46006711A8 /* MyDailyReprieve.xcdatamodeld in Sources */,
+				DE26D6571678299000107D13 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +319,7 @@
 				DE462D5516534A46006711A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
