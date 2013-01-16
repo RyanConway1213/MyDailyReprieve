@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE26D6571678299000107D13 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26D6551678299000107D13 /* MapViewController.m */; };
 		DE26D6581678299000107D13 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE26D6561678299000107D13 /* MapViewController.xib */; };
+		DE2BD17116A6411B00719DC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE2BD17016A6411B00719DC0 /* .gitignore */; };
 		DE462D3516534A46006711A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3416534A46006711A8 /* UIKit.framework */; };
 		DE462D3716534A46006711A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3616534A46006711A8 /* Foundation.framework */; };
 		DE462D3916534A46006711A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3816534A46006711A8 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 		DE26D6541678299000107D13 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MyDailyReprieve/MapViewController.h; sourceTree = "<group>"; };
 		DE26D6551678299000107D13 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MyDailyReprieve/MapViewController.m; sourceTree = "<group>"; };
 		DE26D6561678299000107D13 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = MyDailyReprieve/MapViewController.xib; sourceTree = "<group>"; };
+		DE2BD17016A6411B00719DC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DE462D3016534A46006711A8 /* MyDailyReprieve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyReprieve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE462D3416534A46006711A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE462D3616534A46006711A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +95,7 @@
 			children = (
 				DE462D3F16534A46006711A8 /* InfoPlist.strings */,
 				DE462D5A16534ED9006711A8 /* Images */,
+				DE2BD17016A6411B00719DC0 /* .gitignore */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				DE462D4B16534A46006711A8 /* Default@2x.png in Resources */,
 				DE462D4D16534A46006711A8 /* Default-568h@2x.png in Resources */,
 				DE26D6581678299000107D13 /* MapViewController.xib in Resources */,
+				DE2BD17116A6411B00719DC0 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
