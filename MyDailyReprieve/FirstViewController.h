@@ -11,4 +11,11 @@
 
 @interface FirstViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView           *detailView;
+@property (strong, nonatomic) IBOutlet UIButton         *detailButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem  *barButton;
+
+-(IBAction)buttonPressed:(id)sender;
+-(IBAction)barButtonPressed:(id)sender;
+
 @end

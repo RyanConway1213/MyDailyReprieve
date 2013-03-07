@@ -8,12 +8,15 @@
 
 #import "FirstViewController.h"
 #import "SWRevealViewController.h"
+#import "UIView+MDP.h"
 
 @interface FirstViewController ()
 
 @end
 
 @implementation FirstViewController
+
+@synthesize detailView, detailButton, barButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,12 +48,28 @@
                                                                         action:@selector(revealToggle:)];
     
     self.navigationItem.leftBarButtonItem = revealButtonItem;
+    
+    [self.detailView setY:self.view.frame.size.height];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)buttonPressed:(id)sender
+{
+    [UIView animateWithDuration:.3 animations:^{
+        [self.detailView setY:self.view.frame.size.height - self.detailView.frame.size.height];
+    }];
+}
+
+-(IBAction)barButtonPressed:(id)sender
+{
+    [UIView animateWithDuration:.3 animations:^{
+        [self.detailView setY:self.view.frame.size.height];
+    }];
 }
 
 @end

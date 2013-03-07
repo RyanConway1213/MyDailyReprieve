@@ -24,6 +24,7 @@
 		6DE956D616E8384B00A629D8 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE956D416E8384B00A629D8 /* reveal-icon.png */; };
 		6DE956D716E8384B00A629D8 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DE956D516E8384B00A629D8 /* reveal-icon@2x.png */; };
 		DE2BD17116A6411B00719DC0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE2BD17016A6411B00719DC0 /* .gitignore */; };
+		DE2EAADE16E848F100A8C6E1 /* UIView+MDP.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2EAADD16E848F100A8C6E1 /* UIView+MDP.m */; };
 		DE462D3516534A46006711A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3416534A46006711A8 /* UIKit.framework */; };
 		DE462D3716534A46006711A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3616534A46006711A8 /* Foundation.framework */; };
 		DE462D3916534A46006711A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE462D3816534A46006711A8 /* CoreGraphics.framework */; };
@@ -62,6 +63,8 @@
 		6DE956D416E8384B00A629D8 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		6DE956D516E8384B00A629D8 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 		DE2BD17016A6411B00719DC0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DE2EAADC16E848F100A8C6E1 /* UIView+MDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MDP.h"; sourceTree = "<group>"; };
+		DE2EAADD16E848F100A8C6E1 /* UIView+MDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDP.m"; sourceTree = "<group>"; };
 		DE462D3016534A46006711A8 /* MyDailyReprieve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyReprieve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE462D3416534A46006711A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE462D3616534A46006711A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -164,6 +167,15 @@
 			name = "Rear View Controller (Nav)";
 			sourceTree = "<group>";
 		};
+		DE2EAADA16E848CC00A8C6E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EAADC16E848F100A8C6E1 /* UIView+MDP.h */,
+				DE2EAADD16E848F100A8C6E1 /* UIView+MDP.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		DE462D2516534A46006711A8 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +220,7 @@
 		DE462D5716534E28006711A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DE2EAADA16E848CC00A8C6E1 /* Extensions */,
 				DE462D4216534A46006711A8 /* main.m */,
 				DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */,
 				DE462D5916534E67006711A8 /* App */,
@@ -336,6 +349,7 @@
 				6DE956C816E8353500A629D8 /* ThirdViewController.m in Sources */,
 				6DE956CD16E8354100A629D8 /* FourthViewController.m in Sources */,
 				6DE956D216E8354A00A629D8 /* FifthViewController.m in Sources */,
+				DE2EAADE16E848F100A8C6E1 /* UIView+MDP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
