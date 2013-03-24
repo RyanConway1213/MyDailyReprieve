@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D51A36716FE848F00EF0E8B /* SLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D51A36616FE848F00EF0E8B /* SLColors.m */; };
 		6DE956B016E8337400A629D8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE956AF16E8337400A629D8 /* QuartzCore.framework */; };
 		6DE956B416E8340800A629D8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE956B316E8340800A629D8 /* SWRevealViewController.m */; };
 		6DE956B916E8345400A629D8 /* RearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE956B716E8345400A629D8 /* RearViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D51A36516FE848F00EF0E8B /* SLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLColors.h; sourceTree = "<group>"; };
+		6D51A36616FE848F00EF0E8B /* SLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLColors.m; sourceTree = "<group>"; };
 		6DE956AF16E8337400A629D8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DE956B216E8340800A629D8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		6DE956B316E8340800A629D8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D51A36416FE846B00EF0E8B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				6D51A36516FE848F00EF0E8B /* SLColors.h */,
+				6D51A36616FE848F00EF0E8B /* SLColors.m */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
 		6DE9569116E832F400A629D8 /* FirstViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +237,7 @@
 				DE462D4416534A46006711A8 /* MyDailyReprieve-Prefix.pch */,
 				DE462D5916534E67006711A8 /* App */,
 				DE462D5816534E50006711A8 /* Models */,
+				6D51A36416FE846B00EF0E8B /* Colors */,
 				6DE956B116E833DE00A629D8 /* SWRevealViewController */,
 			);
 			name = Source;
@@ -350,6 +363,7 @@
 				6DE956CD16E8354100A629D8 /* FourthViewController.m in Sources */,
 				6DE956D216E8354A00A629D8 /* FifthViewController.m in Sources */,
 				DE2EAADE16E848F100A8C6E1 /* UIView+MDP.m in Sources */,
+				6D51A36716FE848F00EF0E8B /* SLColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

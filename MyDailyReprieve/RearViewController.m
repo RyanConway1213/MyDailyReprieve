@@ -14,6 +14,7 @@
 #import "ThirdViewController.h"
 #import "FourthViewController.h"
 #import "FifthViewController.h"
+#import "SLColors.h"
 
 @interface RearViewController ()
 
@@ -27,14 +28,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _rearNavBar.tintColor = [UIColor grayColor];
+    // customize the nav bar
+    _rearNavBar.tintColor = [SLColors lightTanColor];
     _rearNavBar.layer.shadowColor = [[UIColor blackColor] CGColor];
     _rearNavBar.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
     _rearNavBar.layer.shadowRadius = 3.0f;
     _rearNavBar.layer.shadowOpacity = 1.0f;
+    NSDictionary *navBarAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      [SLColors greenTextColor], UITextAttributeTextColor,
+                                      [UIColor clearColor], UITextAttributeTextShadowColor,
+                                      [NSValue valueWithUIOffset:UIOffsetMake(0,0)], UITextAttributeTextShadowOffset,
+                                      [UIFont fontWithName:@"Georgia-Bold" size:20], UITextAttributeFont, nil];
+    [_rearNavBar setTitleTextAttributes:navBarAttributes];
+    
+    // customize the table view
+    [_rearTableView setBackgroundColor:[SLColors lightTanColor]];
+    [_rearTableView setSeparatorColor:[SLColors darkerTanColor]];
+    
 }
 
 #pragma mark - UITableView Data Source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -67,7 +84,15 @@
 		cell.textLabel.text = @"FifthViewController";
 	}
     
-    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    [cell setBackgroundColor:[UIColor clearColor]];
+    [cell.textLabel setTextColor:[SLColors greenTextColor]];
+    [cell.textLabel setHighlightedTextColor:[SLColors greenTextColor]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"Georgia-Bold" size:16]];
+    
+    // set selected background color
+    UIView *bgColorView = [[UIView alloc] init];
+    [bgColorView setBackgroundColor:[SLColors darkerTanColor]];
+    [cell setSelectedBackgroundView:bgColorView];
     
 	return cell;
 }

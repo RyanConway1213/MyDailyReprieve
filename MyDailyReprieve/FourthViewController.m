@@ -8,6 +8,7 @@
 
 #import "FourthViewController.h"
 #import "SWRevealViewController.h"
+#import "SLColors.h"
 
 @interface FourthViewController ()
 
@@ -29,11 +30,17 @@
 	[super viewDidLoad];
 	
 	self.title = NSLocalizedString(@"Fourth", nil);
-    self.navigationController.navigationBar.tintColor = [UIColor grayColor];
+    self.navigationController.navigationBar.tintColor = [SLColors lightTanColor];
     self.navigationController.navigationBar.layer.shadowColor = [[UIColor blackColor] CGColor];
     self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
     self.navigationController.navigationBar.layer.shadowRadius = 3.0f;
     self.navigationController.navigationBar.layer.shadowOpacity = 1.0f;
+    NSDictionary *navBarAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      [SLColors greenTextColor], UITextAttributeTextColor,
+                                      [UIColor clearColor], UITextAttributeTextShadowColor,
+                                      [NSValue valueWithUIOffset:UIOffsetMake(0,0)], UITextAttributeTextShadowOffset,
+                                      [UIFont fontWithName:@"Georgia-Bold" size:20], UITextAttributeFont, nil];
+    [self.navigationController.navigationBar setTitleTextAttributes:navBarAttributes];
     
     SWRevealViewController *revealController = [self revealViewController];
     
@@ -45,6 +52,7 @@
                                                                         action:@selector(revealToggle:)];
     
     self.navigationItem.leftBarButtonItem = revealButtonItem;
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor lightGrayColor];
 }
 
 - (void)didReceiveMemoryWarning
