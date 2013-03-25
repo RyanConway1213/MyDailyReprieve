@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface ThirdViewController : UIViewController
+@interface ThirdViewController : UIViewController <NSXMLParserDelegate>
 
 @end

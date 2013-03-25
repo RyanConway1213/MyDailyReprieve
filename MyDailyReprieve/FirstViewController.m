@@ -58,7 +58,7 @@
                                                                         target:revealController
                                                                         action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = revealButtonItem;
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor lightGrayColor];
+    self.navigationItem.leftBarButtonItem.tintColor = [SLColors greenTextColor];
     
     [self.detailView setY:self.view.frame.size.height];
 }

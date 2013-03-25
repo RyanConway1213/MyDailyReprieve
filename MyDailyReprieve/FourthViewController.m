@@ -29,6 +29,8 @@
 {
 	[super viewDidLoad];
 	
+    [self.view setBackgroundColor:[SLColors lightTanColor]];
+    
 	self.title = NSLocalizedString(@"Fourth", nil);
     self.navigationController.navigationBar.tintColor = [SLColors lightTanColor];
     self.navigationController.navigationBar.layer.shadowColor = [[UIColor blackColor] CGColor];
@@ -52,7 +54,8 @@
                                                                         action:@selector(revealToggle:)];
     
     self.navigationItem.leftBarButtonItem = revealButtonItem;
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor lightGrayColor];
+    self.navigationItem.leftBarButtonItem.tintColor = [SLColors greenTextColor];
+    
 }
 
 - (void)didReceiveMemoryWarning

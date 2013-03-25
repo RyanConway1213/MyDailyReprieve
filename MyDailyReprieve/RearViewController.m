@@ -69,13 +69,13 @@
 	}
     
 	if (row == 0) {
-		cell.textLabel.text = @"FirstViewController";
+		cell.textLabel.text = @"Map - Ryan";
 	}
 	else if (row == 1) {
-		cell.textLabel.text = @"SecondViewController";
+		cell.textLabel.text = @"Plist - Kyle";
 	}
     else if (row == 2) {
-		cell.textLabel.text = @"ThirdViewController";
+		cell.textLabel.text = @"Twitter - Scott";
 	}
     else if (row == 3) {
 		cell.textLabel.text = @"FourthViewController";
