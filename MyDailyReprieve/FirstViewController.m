@@ -17,7 +17,7 @@
 
 @implementation FirstViewController
 
-@synthesize detailView, detailButton, barButton;
+@synthesize detailView, detailButton, barButton, drawerToolbar, searchList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +32,13 @@
 {
 	[super viewDidLoad];
 	
-    //[self.view setBackgroundColor:[SLColors lightTanColor]];
+    [self.view setBackgroundColor:[SLColors lightTanColor]];
+    [detailButton setTintColor:[SLColors darkerTanColor]];
+    [barButton setTintColor:[SLColors darkerTanColor]];
+    [drawerToolbar setTintColor:[SLColors darkerTanColor]];
+    
+    searchList = [[NSArray alloc]
+                  initWithObjects:@"Drug and Alcholo Treatment Centers In Patient and Out Patient Programs", @"Drug and Alcohol Therapists", @"Adult Detox Centers or Hospitals", @"Adolescent Drug and Alcohol In Patient Centers", @"Adolescent Drug and Alcohol out Patient Centers", @"Adolescent Detox Centers or Hospitals", @"Addiction Psychologists", @"Addiction Psychiatrists", @"Recovery Coaches", @"Interventionists",@"Council on Alcoholism various cities", nil];
     
     // customize the nav bar
 	self.title = NSLocalizedString(@"First", nil);
@@ -81,6 +87,24 @@
     [UIView animateWithDuration:.3 animations:^{
         [self.detailView setY:self.view.frame.size.height];
     }];
+}
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [searchList count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [searchList objectAtIndex:row];
 }
 
 @end
