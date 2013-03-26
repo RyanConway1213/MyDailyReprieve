@@ -10,6 +10,8 @@
 #import "SWRevealViewController.h"
 #import "SLColors.h"
 #import "SoberFitnessViewController.h"
+#import "SoberCoachingViewController.h"
+#import "NutritionViewController.h"
 
 @implementation SecondViewController
 
@@ -22,8 +24,6 @@
     
     NSString *Path = [[NSBundle mainBundle] bundlePath];
 	NSString *DataPath = [Path stringByAppendingPathComponent:@"data.plist"];
-	
-//    [self.tableView setBackgroundColor:[SLColors lightTanColor]];
     
 	self.title = NSLocalizedString(@"Fourth", nil);
 	NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:DataPath];
@@ -34,7 +34,7 @@
 		self.tableDataSource = tempArray;
 		self.tableDataSource = [data objectForKey:@"Rows"];
 		
-		self.navigationItem.title = @"Tips";
+		self.navigationItem.title = @"Resources";
 	}
 	else
 		self.navigationItem.title = CurrentTitle;
@@ -101,7 +101,9 @@
     cell.textLabel.textColor = [SLColors greenTextColor];
     
     [cell setBackgroundColor:[SLColors lightTanColor]];
-    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+
     return cell;
 }
 
@@ -119,14 +121,16 @@
         [self.navigationController pushViewController:sfvc animated:YES];
 	}
     else if (indexPath.row == 1){
-        
+		SoberCoachingViewController *scvc = [[SoberCoachingViewController alloc] init];
+        scvc.navigationItem.title = @"Sober Coaching";
+        scvc.navigationItem.backBarButtonItem.title = @"Back";
+        [self.navigationController pushViewController:scvc animated:YES];
     }
     else if (indexPath.row == 2){
-
-    }
-    else if (indexPath.row == 3){
-        
-    
+		NutritionViewController *scvc = [[NutritionViewController alloc] init];
+        scvc.navigationItem.title = @"Nutrition 101";
+        scvc.navigationItem.backBarButtonItem.title = @"Back";
+        [self.navigationController pushViewController:scvc animated:YES];
     }
 	else {
 		SecondViewController *rvController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:[NSBundle mainBundle]];

@@ -40,6 +40,12 @@
 		DEC1DC1016FFF8C40081DB76 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC0F16FFF8C40081DB76 /* Data.plist */; };
 		DEC1DC1C170151520081DB76 /* SoberFitnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */; };
 		DEC1DC1D170151520081DB76 /* SoberFitnessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */; };
+		DEC1DC22170158C20081DB76 /* SoberCoachingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1DC20170158C20081DB76 /* SoberCoachingViewController.m */; };
+		DEC1DC23170158C20081DB76 /* SoberCoachingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC21170158C20081DB76 /* SoberCoachingViewController.xib */; };
+		DEC1DC2517015AE00081DB76 /* MarciaYager.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC2417015AE00081DB76 /* MarciaYager.png */; };
+		DEC1DC2917015D8D0081DB76 /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1DC2717015D8C0081DB76 /* NutritionViewController.m */; };
+		DEC1DC2A17015D8D0081DB76 /* NutritionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC2817015D8C0081DB76 /* NutritionViewController.xib */; };
+		DEC1DC2C170166A50081DB76 /* light_button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC2B170166A50081DB76 /* light_button_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +96,14 @@
 		DEC1DC19170151520081DB76 /* SoberFitnessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoberFitnessViewController.h; sourceTree = "<group>"; };
 		DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoberFitnessViewController.m; sourceTree = "<group>"; };
 		DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoberFitnessViewController.xib; sourceTree = "<group>"; };
+		DEC1DC1F170158C20081DB76 /* SoberCoachingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoberCoachingViewController.h; sourceTree = "<group>"; };
+		DEC1DC20170158C20081DB76 /* SoberCoachingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoberCoachingViewController.m; sourceTree = "<group>"; };
+		DEC1DC21170158C20081DB76 /* SoberCoachingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoberCoachingViewController.xib; sourceTree = "<group>"; };
+		DEC1DC2417015AE00081DB76 /* MarciaYager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarciaYager.png; sourceTree = "<group>"; };
+		DEC1DC2617015D8C0081DB76 /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
+		DEC1DC2717015D8C0081DB76 /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
+		DEC1DC2817015D8C0081DB76 /* NutritionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NutritionViewController.xib; sourceTree = "<group>"; };
+		DEC1DC2B170166A50081DB76 /* light_button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_button_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,12 @@
 				DEC1DC19170151520081DB76 /* SoberFitnessViewController.h */,
 				DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */,
 				DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */,
+				DEC1DC1F170158C20081DB76 /* SoberCoachingViewController.h */,
+				DEC1DC20170158C20081DB76 /* SoberCoachingViewController.m */,
+				DEC1DC21170158C20081DB76 /* SoberCoachingViewController.xib */,
+				DEC1DC2617015D8C0081DB76 /* NutritionViewController.h */,
+				DEC1DC2717015D8C0081DB76 /* NutritionViewController.m */,
+				DEC1DC2817015D8C0081DB76 /* NutritionViewController.xib */,
 			);
 			name = SecondViewController;
 			sourceTree = "<group>";
@@ -280,6 +300,8 @@
 		DE462D5A16534ED9006711A8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DEC1DC2B170166A50081DB76 /* light_button_background.png */,
+				DEC1DC2417015AE00081DB76 /* MarciaYager.png */,
 				6DE956D416E8384B00A629D8 /* reveal-icon.png */,
 				6DE956D516E8384B00A629D8 /* reveal-icon@2x.png */,
 				DE462D4816534A46006711A8 /* Default.png */,
@@ -355,6 +377,10 @@
 				6DE956D716E8384B00A629D8 /* reveal-icon@2x.png in Resources */,
 				DEC1DC1016FFF8C40081DB76 /* Data.plist in Resources */,
 				DEC1DC1D170151520081DB76 /* SoberFitnessViewController.xib in Resources */,
+				DEC1DC23170158C20081DB76 /* SoberCoachingViewController.xib in Resources */,
+				DEC1DC2517015AE00081DB76 /* MarciaYager.png in Resources */,
+				DEC1DC2A17015D8D0081DB76 /* NutritionViewController.xib in Resources */,
+				DEC1DC2C170166A50081DB76 /* light_button_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +404,8 @@
 				DE2EAADE16E848F100A8C6E1 /* UIView+MDP.m in Sources */,
 				6D51A36716FE848F00EF0E8B /* SLColors.m in Sources */,
 				DEC1DC1C170151520081DB76 /* SoberFitnessViewController.m in Sources */,
+				DEC1DC22170158C20081DB76 /* SoberCoachingViewController.m in Sources */,
+				DEC1DC2917015D8D0081DB76 /* NutritionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

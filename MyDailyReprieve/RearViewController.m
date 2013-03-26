@@ -69,13 +69,13 @@
 	}
     
 	if (row == 0) {
-		cell.textLabel.text = @"Map - Ryan";
+		cell.textLabel.text = @"Home";
 	}
 	else if (row == 1) {
-		cell.textLabel.text = @"Plist - Kyle";
+		cell.textLabel.text = @"Resources";
 	}
     else if (row == 2) {
-		cell.textLabel.text = @"Twitter - Scott";
+		cell.textLabel.text = @"Twitter";
 	}
     else if (row == 3) {
 		cell.textLabel.text = @"FourthViewController";
