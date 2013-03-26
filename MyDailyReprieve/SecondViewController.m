@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "SWRevealViewController.h"
 #import "SLColors.h"
+#import "SoberFitnessViewController.h"
 
 @implementation SecondViewController
 
@@ -22,7 +23,7 @@
     NSString *Path = [[NSBundle mainBundle] bundlePath];
 	NSString *DataPath = [Path stringByAppendingPathComponent:@"data.plist"];
 	
-    //    [self.view setBackgroundColor:[SLColors lightTanColor]];
+//    [self.tableView setBackgroundColor:[SLColors lightTanColor]];
     
 	self.title = NSLocalizedString(@"Fourth", nil);
 	NSDictionary *tempDict = [[NSDictionary alloc] initWithContentsOfFile:DataPath];
@@ -31,12 +32,9 @@
     if(CurrentLevel == 0) {
         NSArray *tempArray = [[NSArray alloc] init];
 		self.tableDataSource = tempArray;
-		
-        //		DrillDownAppAppDelegate *AppDelegate = (DrillDownAppAppDelegate *)[[UIApplication sharedApplication] delegate];
-        //        NSLog(@"Data.plist: %@", AppDelegate.data);
 		self.tableDataSource = [data objectForKey:@"Rows"];
 		
-		self.navigationItem.title = @"Root";
+		self.navigationItem.title = @"Tips";
 	}
 	else
 		self.navigationItem.title = CurrentTitle;
@@ -65,6 +63,12 @@
                                                                         action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = revealButtonItem;
     self.navigationItem.leftBarButtonItem.tintColor = [SLColors greenTextColor];
+    
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+    barButton.title = @"Back";
+    barButton.tintColor = [SLColors greenTextColor];
+    self.navigationItem.backBarButtonItem = barButton;
     
 }
 
@@ -108,11 +112,22 @@
 	
 	NSArray *Children = [dictionary objectForKey:@"Children"];
 	
-	if([Children count] == 0) {
-		
-        //		DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
-        //		[self.navigationController pushViewController:dvController animated:YES];
+	if(indexPath.row == 0) {
+		SoberFitnessViewController *sfvc = [[SoberFitnessViewController alloc] init];
+        sfvc.navigationItem.title = @"Sober Fitness";
+        sfvc.navigationItem.backBarButtonItem.title = @"Back";
+        [self.navigationController pushViewController:sfvc animated:YES];
 	}
+    else if (indexPath.row == 1){
+        
+    }
+    else if (indexPath.row == 2){
+
+    }
+    else if (indexPath.row == 3){
+        
+    
+    }
 	else {
 		SecondViewController *rvController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:[NSBundle mainBundle]];
 		

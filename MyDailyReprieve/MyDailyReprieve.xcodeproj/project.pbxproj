@@ -38,6 +38,8 @@
 		DE462D4D16534A46006711A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE462D4C16534A46006711A8 /* Default-568h@2x.png */; };
 		DE462D5016534A46006711A8 /* MyDailyReprieve.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE462D4E16534A46006711A8 /* MyDailyReprieve.xcdatamodeld */; };
 		DEC1DC1016FFF8C40081DB76 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC0F16FFF8C40081DB76 /* Data.plist */; };
+		DEC1DC1C170151520081DB76 /* SoberFitnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */; };
+		DEC1DC1D170151520081DB76 /* SoberFitnessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,9 @@
 		DE462D4C16534A46006711A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "MyDailyReprieve/Default-568h@2x.png"; sourceTree = "<group>"; };
 		DE462D4F16534A46006711A8 /* MyDailyReprieve.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDailyReprieve.xcdatamodel; sourceTree = "<group>"; };
 		DEC1DC0F16FFF8C40081DB76 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		DEC1DC19170151520081DB76 /* SoberFitnessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoberFitnessViewController.h; sourceTree = "<group>"; };
+		DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoberFitnessViewController.m; sourceTree = "<group>"; };
+		DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoberFitnessViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,9 @@
 				6DE956C016E8352D00A629D8 /* SecondViewController.h */,
 				6DE956C116E8352D00A629D8 /* SecondViewController.m */,
 				6DE956C216E8352D00A629D8 /* SecondViewController.xib */,
+				DEC1DC19170151520081DB76 /* SoberFitnessViewController.h */,
+				DEC1DC1A170151520081DB76 /* SoberFitnessViewController.m */,
+				DEC1DC1B170151520081DB76 /* SoberFitnessViewController.xib */,
 			);
 			name = SecondViewController;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				6DE956D616E8384B00A629D8 /* reveal-icon.png in Resources */,
 				6DE956D716E8384B00A629D8 /* reveal-icon@2x.png in Resources */,
 				DEC1DC1016FFF8C40081DB76 /* Data.plist in Resources */,
+				DEC1DC1D170151520081DB76 /* SoberFitnessViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +377,7 @@
 				6DE956D216E8354A00A629D8 /* FifthViewController.m in Sources */,
 				DE2EAADE16E848F100A8C6E1 /* UIView+MDP.m in Sources */,
 				6D51A36716FE848F00EF0E8B /* SLColors.m in Sources */,
+				DEC1DC1C170151520081DB76 /* SoberFitnessViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
