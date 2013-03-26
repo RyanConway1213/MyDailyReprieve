@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UITableViewController {
+	
+	NSArray *tableDataSource;
+	NSString *CurrentTitle;
+	NSInteger CurrentLevel;
+}
+
+@property (nonatomic, retain) NSArray *tableDataSource;
+@property (nonatomic, retain) NSString *CurrentTitle;
+@property (nonatomic, readwrite) NSInteger CurrentLevel;
+@property (nonatomic, retain) NSDictionary *data;
 
 @end
