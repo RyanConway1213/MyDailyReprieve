@@ -33,7 +33,7 @@
 	[super viewDidLoad];
 	
     [self.view setBackgroundColor:[SLColors lightTanColor]];
-    [detailButton setTintColor:[SLColors darkerTanColor]];
+    //[detailButton setTintColor:[SLColors darkerTanColor]];
     [barButton setTintColor:[SLColors darkerTanColor]];
     [drawerToolbar setTintColor:[SLColors darkerTanColor]];
     

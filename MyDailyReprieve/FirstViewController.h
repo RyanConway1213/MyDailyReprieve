@@ -16,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem  *barButton;
 @property (strong, nonatomic) IBOutlet UIToolbar *drawerToolbar;
 @property (strong, nonatomic) NSArray *searchList;
+@property (strong, nonatomic) IBOutlet UIButton *searchZipButton;
+@property (strong, nonatomic) IBOutlet UIButton *searchCurrentLocButton;
 
 -(IBAction)buttonPressed:(id)sender;
 -(IBAction)barButtonPressed:(id)sender;
